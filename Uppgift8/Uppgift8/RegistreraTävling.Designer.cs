@@ -45,7 +45,6 @@
             this.B_label = new System.Windows.Forms.Label();
             this.HandicapGränser_label = new System.Windows.Forms.Label();
             this.AFrån_textBox = new System.Windows.Forms.TextBox();
-            this.Avbryt_button = new System.Windows.Forms.Button();
             this.OK_button = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.ÖppenFör_label = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@
             this.Tävlingsnamn_textBox = new System.Windows.Forms.TextBox();
             this.Tävlingsnamn_label = new System.Windows.Forms.Label();
             this.A_label = new System.Windows.Forms.Label();
+            this.Avbryt_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MaxAntaldeltagare_textBox
@@ -194,15 +194,6 @@
             this.AFrån_textBox.Size = new System.Drawing.Size(30, 20);
             this.AFrån_textBox.TabIndex = 98;
             // 
-            // Avbryt_button
-            // 
-            this.Avbryt_button.Location = new System.Drawing.Point(268, 338);
-            this.Avbryt_button.Name = "Avbryt_button";
-            this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
-            this.Avbryt_button.TabIndex = 108;
-            this.Avbryt_button.Text = "Avbryt";
-            this.Avbryt_button.UseVisualStyleBackColor = true;
-            // 
             // OK_button
             // 
             this.OK_button.Location = new System.Drawing.Point(180, 338);
@@ -290,11 +281,22 @@
             this.A_label.TabIndex = 122;
             this.A_label.Text = "A";
             // 
+            // Avbryt_button
+            // 
+            this.Avbryt_button.Location = new System.Drawing.Point(267, 338);
+            this.Avbryt_button.Name = "Avbryt_button";
+            this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
+            this.Avbryt_button.TabIndex = 123;
+            this.Avbryt_button.Text = "Avbryt";
+            this.Avbryt_button.UseVisualStyleBackColor = true;
+            this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
+            // 
             // RegistreraTävling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 370);
+            this.Controls.Add(this.Avbryt_button);
             this.Controls.Add(this.A_label);
             this.Controls.Add(this.MaxAntaldeltagare_textBox);
             this.Controls.Add(this.Max_label);
@@ -313,7 +315,6 @@
             this.Controls.Add(this.B_label);
             this.Controls.Add(this.HandicapGränser_label);
             this.Controls.Add(this.AFrån_textBox);
-            this.Controls.Add(this.Avbryt_button);
             this.Controls.Add(this.OK_button);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.ÖppenFör_label);
@@ -349,7 +350,6 @@
         private System.Windows.Forms.Label B_label;
         private System.Windows.Forms.Label HandicapGränser_label;
         private System.Windows.Forms.TextBox AFrån_textBox;
-        private System.Windows.Forms.Button Avbryt_button;
         private System.Windows.Forms.Button OK_button;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label ÖppenFör_label;
@@ -360,5 +360,6 @@
         private System.Windows.Forms.TextBox Tävlingsnamn_textBox;
         private System.Windows.Forms.Label Tävlingsnamn_label;
         private System.Windows.Forms.Label A_label;
+        private System.Windows.Forms.Button Avbryt_button;
     }
 }

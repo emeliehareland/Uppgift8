@@ -31,11 +31,11 @@
             this.Tävlingid_textBox = new System.Windows.Forms.TextBox();
             this.Tävlingid_label = new System.Windows.Forms.Label();
             this.OK_button = new System.Windows.Forms.Button();
-            this.Avbryt_button = new System.Windows.Forms.Button();
             this.Golfid_textBox = new System.Windows.Forms.TextBox();
             this.Golfid_label = new System.Windows.Forms.Label();
             this.Resultat_textBox = new System.Windows.Forms.TextBox();
             this.Resultat_label = new System.Windows.Forms.Label();
+            this.Avbryt_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Tävlingid_textBox
@@ -62,15 +62,6 @@
             this.OK_button.TabIndex = 116;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
-            // 
-            // Avbryt_button
-            // 
-            this.Avbryt_button.Location = new System.Drawing.Point(197, 227);
-            this.Avbryt_button.Name = "Avbryt_button";
-            this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
-            this.Avbryt_button.TabIndex = 115;
-            this.Avbryt_button.Text = "Avbryt";
-            this.Avbryt_button.UseVisualStyleBackColor = true;
             // 
             // Golfid_textBox
             // 
@@ -104,17 +95,27 @@
             this.Resultat_label.TabIndex = 119;
             this.Resultat_label.Text = "Resultat";
             // 
+            // Avbryt_button
+            // 
+            this.Avbryt_button.Location = new System.Drawing.Point(197, 227);
+            this.Avbryt_button.Name = "Avbryt_button";
+            this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
+            this.Avbryt_button.TabIndex = 121;
+            this.Avbryt_button.Text = "Avbryt";
+            this.Avbryt_button.UseVisualStyleBackColor = true;
+            this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
+            // 
             // RegistreraResultat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.Avbryt_button);
             this.Controls.Add(this.Resultat_textBox);
             this.Controls.Add(this.Resultat_label);
             this.Controls.Add(this.Tävlingid_textBox);
             this.Controls.Add(this.Tävlingid_label);
             this.Controls.Add(this.OK_button);
-            this.Controls.Add(this.Avbryt_button);
             this.Controls.Add(this.Golfid_textBox);
             this.Controls.Add(this.Golfid_label);
             this.Name = "RegistreraResultat";
@@ -129,11 +130,11 @@
         private System.Windows.Forms.TextBox Tävlingid_textBox;
         private System.Windows.Forms.Label Tävlingid_label;
         private System.Windows.Forms.Button OK_button;
-        private System.Windows.Forms.Button Avbryt_button;
         private System.Windows.Forms.TextBox Golfid_textBox;
         private System.Windows.Forms.Label Golfid_label;
         private System.Windows.Forms.TextBox Resultat_textBox;
         private System.Windows.Forms.Label Resultat_label;
+        private System.Windows.Forms.Button Avbryt_button;
 
     }
 }
