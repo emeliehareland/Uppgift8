@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Uppgift8
 {
     public partial class Huvudfönster : Form
     {
+        public static NpgsqlConnection conn;
+
         public Huvudfönster()
         {
             InitializeComponent();
+            Connect();
+        }
+
+        private static void Connect()
+        {
+            conn = new NpgsqlConnection("Server=localhost;Port=5432;Database=postgres;User Id=postgres;Password=password;SSL=true");
+            conn.Open();
         }
 
         private void medlemshanteringToolStripMenuItem_Click(object sender, EventArgs e)
