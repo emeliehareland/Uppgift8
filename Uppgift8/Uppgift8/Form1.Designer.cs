@@ -81,8 +81,8 @@
             this.anmälDeltagareToolStripMenuItem,
             this.registreraResultatToolStripMenuItem});
             this.tävlingsverksamhetToolStripMenuItem.Name = "tävlingsverksamhetToolStripMenuItem";
-            this.tävlingsverksamhetToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
-            this.tävlingsverksamhetToolStripMenuItem.Text = "Tävlingsverksamhet";
+            this.tävlingsverksamhetToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.tävlingsverksamhetToolStripMenuItem.Text = "Tävlingshantering";
             // 
             // registeraTävlingToolStripMenuItem
             // 

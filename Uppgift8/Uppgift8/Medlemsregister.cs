@@ -215,12 +215,12 @@ namespace Uppgift8
 
             string id = markeratid();
 
-            string updatera_p = "update person set namn = '" + Namn_textBox.Text + "', adress = '" + Adress_textBox.Text + "', telefonnummer = '" + Telefonnr_textBox.Text + "', epost = '" + Epost_textBox.Text + "', handicap = " + Handicap_textBox.Text + ", kon = '" + kon + "' where golfid = '" + Golfid_textBox2.Text + "';";
-            NpgsqlCommand command_uppdatera_p = new NpgsqlCommand(updatera_p, Huvudfönster.conn);
+            string uppdatera_p = "update person set namn = '" + Namn_textBox.Text + "', adress = '" + Adress_textBox.Text + "', telefonnummer = '" + Telefonnr_textBox.Text + "', epost = '" + Epost_textBox.Text + "', handicap = " + Handicap_textBox.Text + ", kon = '" + kon + "' where golfid = '" + Golfid_textBox2.Text + "';";
+            NpgsqlCommand command_uppdatera_p = new NpgsqlCommand(uppdatera_p, Huvudfönster.conn);
             command_uppdatera_p.ExecuteNonQuery();
 
-            string updatera_m = "update medlem set medlemsstatus = '" + status + "', betalt = '" + BetaltÅr_textBox.Text + "' where golfid = '" + Golfid_textBox2.Text + "';";
-            NpgsqlCommand command_uppdatera_m = new NpgsqlCommand(updatera_m, Huvudfönster.conn);
+            string uppdatera_m = "update medlem set medlemsstatus = '" + status + "', betalt = '" + BetaltÅr_textBox.Text + "' where golfid = '" + Golfid_textBox2.Text + "';";
+            NpgsqlCommand command_uppdatera_m = new NpgsqlCommand(uppdatera_m, Huvudfönster.conn);
             command_uppdatera_m.ExecuteNonQuery();
 
             MessageBox.Show("Uppgifter för spelare ändrade!");
