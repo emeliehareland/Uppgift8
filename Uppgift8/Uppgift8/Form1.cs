@@ -23,7 +23,7 @@ namespace Uppgift8
 
         private static void Connect()
         {
-            conn = new NpgsqlConnection("Server=localhost;Port=5432;Database=postgres;User Id=postgres;Password=password;SSL=true");
+            conn = new NpgsqlConnection("Server=localhost;Port=5432;Database=Uppgift8;User Id=postgres;Password=password;SSL=true");
             conn.Open();
         }
 
