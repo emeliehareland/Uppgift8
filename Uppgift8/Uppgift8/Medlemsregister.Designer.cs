@@ -95,6 +95,7 @@
             this.SökSpelare_button.TabIndex = 96;
             this.SökSpelare_button.Text = "Sök spelare";
             this.SökSpelare_button.UseVisualStyleBackColor = true;
+            this.SökSpelare_button.Click += new System.EventHandler(this.SökSpelare_button_Click);
             // 
             // ÄndraMarkerad_button
             // 

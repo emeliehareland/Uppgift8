@@ -25,7 +25,7 @@ namespace Uppgift8
 
         private void VisaAllaSpelare_button_Click(object sender, EventArgs e)
         {
-            DataTable dta = new DataTable("Table");
+            DataTable dta = new DataTable("Tabell");
             dta.Columns.Add("golfid", typeof(string));
             dta.Columns.Add("namn", typeof(string));
             dta.Columns.Add("adress", typeof(string));
@@ -61,5 +61,46 @@ namespace Uppgift8
             dataGridView1.DataSource = dva;
         }
 
+        private void SökSpelare_button_Click(object sender, EventArgs e)
+        {
+            string id = Golfid_textBox1.Text; 
+
+            DataTable dte = new DataTable("Tabell");
+            dte.Columns.Add("golfid", typeof(string));
+            dte.Columns.Add("namn", typeof(string));
+            dte.Columns.Add("adress", typeof(string));
+            dte.Columns.Add("telefonnummer", typeof(string));
+            dte.Columns.Add("epost", typeof(string));
+            dte.Columns.Add("handicap", typeof(string));
+            dte.Columns.Add("kon", typeof(string));
+            dte.Columns.Add("medlemsstatus", typeof(string));
+            dte.Columns.Add("betalt", typeof(string));
+
+            String en = "select person.golfid, person.namn, person.adress, person.telefonnummer, person.epost, person.handicap, person.kon, medlem.medlemsstatus, medlem.betalt from person, medlem where person.golfid = '" + id + "' and medlem.golfid = '" + id + "';";
+            NpgsqlCommand command = new NpgsqlCommand(en, Huvudfönster.conn);
+            NpgsqlDataReader dre = command.ExecuteReader();
+
+            while (dre.Read())
+            {
+                DataRow row = dte.NewRow();
+                row["golfid"] = dre["golfid"].ToString();
+                row["namn"] = dre["namn"].ToString();
+                row["adress"] = dre["adress"].ToString();
+                row["telefonnummer"] = dre["telefonnummer"].ToString();
+                row["epost"] = dre["epost"].ToString();
+                row["handicap"] = dre["handicap"].ToString();
+                row["kon"] = dre["kon"].ToString();
+                row["medlemsstatus"] = dre["medlemsstatus"].ToString();
+                row["betalt"] = dre["betalt"].ToString();
+
+                dte.Rows.Add(row);
+            }
+            dre.Close();
+
+            DataView db = new DataView(dte);
+            dataGridView1.DataSource = db;
         }
-    }
+        }
+
+        }
+
