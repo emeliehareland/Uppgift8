@@ -41,23 +41,18 @@
             this.BetaltÅr_label = new System.Windows.Forms.Label();
             this.Handicap_label = new System.Windows.Forms.Label();
             this.Epost_textBox = new System.Windows.Forms.TextBox();
-            this.Postort_textBox = new System.Windows.Forms.TextBox();
             this.Epost_label = new System.Windows.Forms.Label();
             this.MedlemsStatus_comboBox = new System.Windows.Forms.ComboBox();
             this.Telefonnr_textBox = new System.Windows.Forms.TextBox();
-            this.Stad_label = new System.Windows.Forms.Label();
             this.Telefonnr_label = new System.Windows.Forms.Label();
             this.Status_label = new System.Windows.Forms.Label();
-            this.Postnr_textBox = new System.Windows.Forms.TextBox();
             this.Handicap_textBox = new System.Windows.Forms.TextBox();
-            this.Postnr_label = new System.Windows.Forms.Label();
-            this.Förnamn_label = new System.Windows.Forms.Label();
+            this.Namn_label = new System.Windows.Forms.Label();
             this.Adress_textBox = new System.Windows.Forms.TextBox();
             this.Kön_comboBox = new System.Windows.Forms.ComboBox();
             this.Adress_label = new System.Windows.Forms.Label();
             this.Kön_label = new System.Windows.Forms.Label();
-            this.Förnamn_textBox = new System.Windows.Forms.TextBox();
-            this.Efternamn_textBox = new System.Windows.Forms.TextBox();
+            this.Namn_textBox = new System.Windows.Forms.TextBox();
             this.Efternamn_label = new System.Windows.Forms.Label();
             this.RaderaMarkerad_button = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -68,12 +63,13 @@
             // 
             // VisaAllaSpelare_button
             // 
-            this.VisaAllaSpelare_button.Location = new System.Drawing.Point(285, 6);
+            this.VisaAllaSpelare_button.Location = new System.Drawing.Point(242, 5);
             this.VisaAllaSpelare_button.Name = "VisaAllaSpelare_button";
             this.VisaAllaSpelare_button.Size = new System.Drawing.Size(93, 23);
             this.VisaAllaSpelare_button.TabIndex = 98;
             this.VisaAllaSpelare_button.Text = "Visa alla spelare";
             this.VisaAllaSpelare_button.UseVisualStyleBackColor = true;
+            this.VisaAllaSpelare_button.Click += new System.EventHandler(this.VisaAllaSpelare_button_Click);
             // 
             // label13
             // 
@@ -88,12 +84,12 @@
             // 
             this.Golfid_textBox1.Location = new System.Drawing.Point(56, 8);
             this.Golfid_textBox1.Name = "Golfid_textBox1";
-            this.Golfid_textBox1.Size = new System.Drawing.Size(100, 20);
+            this.Golfid_textBox1.Size = new System.Drawing.Size(84, 20);
             this.Golfid_textBox1.TabIndex = 97;
             // 
             // SökSpelare_button
             // 
-            this.SökSpelare_button.Location = new System.Drawing.Point(162, 6);
+            this.SökSpelare_button.Location = new System.Drawing.Point(146, 5);
             this.SökSpelare_button.Name = "SökSpelare_button";
             this.SökSpelare_button.Size = new System.Drawing.Size(75, 23);
             this.SökSpelare_button.TabIndex = 96;
@@ -102,7 +98,7 @@
             // 
             // ÄndraMarkerad_button
             // 
-            this.ÄndraMarkerad_button.Location = new System.Drawing.Point(644, 358);
+            this.ÄndraMarkerad_button.Location = new System.Drawing.Point(525, 5);
             this.ÄndraMarkerad_button.Name = "ÄndraMarkerad_button";
             this.ÄndraMarkerad_button.Size = new System.Drawing.Size(97, 23);
             this.ÄndraMarkerad_button.TabIndex = 93;
@@ -118,27 +114,22 @@
             this.Ändra_groupBox.Controls.Add(this.BetaltÅr_label);
             this.Ändra_groupBox.Controls.Add(this.Handicap_label);
             this.Ändra_groupBox.Controls.Add(this.Epost_textBox);
-            this.Ändra_groupBox.Controls.Add(this.Postort_textBox);
             this.Ändra_groupBox.Controls.Add(this.Epost_label);
             this.Ändra_groupBox.Controls.Add(this.MedlemsStatus_comboBox);
             this.Ändra_groupBox.Controls.Add(this.Telefonnr_textBox);
-            this.Ändra_groupBox.Controls.Add(this.Stad_label);
             this.Ändra_groupBox.Controls.Add(this.Telefonnr_label);
             this.Ändra_groupBox.Controls.Add(this.Status_label);
-            this.Ändra_groupBox.Controls.Add(this.Postnr_textBox);
             this.Ändra_groupBox.Controls.Add(this.Handicap_textBox);
-            this.Ändra_groupBox.Controls.Add(this.Postnr_label);
-            this.Ändra_groupBox.Controls.Add(this.Förnamn_label);
+            this.Ändra_groupBox.Controls.Add(this.Namn_label);
             this.Ändra_groupBox.Controls.Add(this.Adress_textBox);
             this.Ändra_groupBox.Controls.Add(this.Kön_comboBox);
             this.Ändra_groupBox.Controls.Add(this.Adress_label);
             this.Ändra_groupBox.Controls.Add(this.Kön_label);
-            this.Ändra_groupBox.Controls.Add(this.Förnamn_textBox);
-            this.Ändra_groupBox.Controls.Add(this.Efternamn_textBox);
+            this.Ändra_groupBox.Controls.Add(this.Namn_textBox);
             this.Ändra_groupBox.Controls.Add(this.Efternamn_label);
-            this.Ändra_groupBox.Location = new System.Drawing.Point(758, 35);
+            this.Ändra_groupBox.Location = new System.Drawing.Point(747, 36);
             this.Ändra_groupBox.Name = "Ändra_groupBox";
-            this.Ändra_groupBox.Size = new System.Drawing.Size(248, 316);
+            this.Ändra_groupBox.Size = new System.Drawing.Size(268, 316);
             this.Ändra_groupBox.TabIndex = 92;
             this.Ändra_groupBox.TabStop = false;
             this.Ändra_groupBox.Text = "Ändra ";
@@ -146,7 +137,7 @@
             // 
             // Spara_button
             // 
-            this.Spara_button.Location = new System.Drawing.Point(167, 285);
+            this.Spara_button.Location = new System.Drawing.Point(183, 285);
             this.Spara_button.Name = "Spara_button";
             this.Spara_button.Size = new System.Drawing.Size(75, 23);
             this.Spara_button.TabIndex = 84;
@@ -166,7 +157,7 @@
             // 
             this.BetaltÅr_textBox.Location = new System.Drawing.Point(63, 281);
             this.BetaltÅr_textBox.Name = "BetaltÅr_textBox";
-            this.BetaltÅr_textBox.Size = new System.Drawing.Size(77, 20);
+            this.BetaltÅr_textBox.Size = new System.Drawing.Size(41, 20);
             this.BetaltÅr_textBox.TabIndex = 82;
             // 
             // Golfid_textBox2
@@ -174,7 +165,7 @@
             this.Golfid_textBox2.Enabled = false;
             this.Golfid_textBox2.Location = new System.Drawing.Point(63, 9);
             this.Golfid_textBox2.Name = "Golfid_textBox2";
-            this.Golfid_textBox2.Size = new System.Drawing.Size(147, 20);
+            this.Golfid_textBox2.Size = new System.Drawing.Size(91, 20);
             this.Golfid_textBox2.TabIndex = 60;
             // 
             // BetaltÅr_label
@@ -199,15 +190,8 @@
             // 
             this.Epost_textBox.Location = new System.Drawing.Point(63, 256);
             this.Epost_textBox.Name = "Epost_textBox";
-            this.Epost_textBox.Size = new System.Drawing.Size(160, 20);
+            this.Epost_textBox.Size = new System.Drawing.Size(195, 20);
             this.Epost_textBox.TabIndex = 68;
-            // 
-            // Postort_textBox
-            // 
-            this.Postort_textBox.Location = new System.Drawing.Point(63, 206);
-            this.Postort_textBox.Name = "Postort_textBox";
-            this.Postort_textBox.Size = new System.Drawing.Size(108, 20);
-            this.Postort_textBox.TabIndex = 74;
             // 
             // Epost_label
             // 
@@ -237,17 +221,8 @@
             // 
             this.Telefonnr_textBox.Location = new System.Drawing.Point(63, 231);
             this.Telefonnr_textBox.Name = "Telefonnr_textBox";
-            this.Telefonnr_textBox.Size = new System.Drawing.Size(160, 20);
+            this.Telefonnr_textBox.Size = new System.Drawing.Size(91, 20);
             this.Telefonnr_textBox.TabIndex = 66;
-            // 
-            // Stad_label
-            // 
-            this.Stad_label.AutoSize = true;
-            this.Stad_label.Location = new System.Drawing.Point(32, 210);
-            this.Stad_label.Name = "Stad_label";
-            this.Stad_label.Size = new System.Drawing.Size(29, 13);
-            this.Stad_label.TabIndex = 73;
-            this.Stad_label.Text = "Stad";
             // 
             // Telefonnr_label
             // 
@@ -267,43 +242,27 @@
             this.Status_label.TabIndex = 80;
             this.Status_label.Text = "Status";
             // 
-            // Postnr_textBox
-            // 
-            this.Postnr_textBox.Location = new System.Drawing.Point(63, 180);
-            this.Postnr_textBox.Name = "Postnr_textBox";
-            this.Postnr_textBox.Size = new System.Drawing.Size(108, 20);
-            this.Postnr_textBox.TabIndex = 72;
-            // 
             // Handicap_textBox
             // 
             this.Handicap_textBox.Location = new System.Drawing.Point(63, 32);
             this.Handicap_textBox.Name = "Handicap_textBox";
-            this.Handicap_textBox.Size = new System.Drawing.Size(57, 20);
+            this.Handicap_textBox.Size = new System.Drawing.Size(41, 20);
             this.Handicap_textBox.TabIndex = 77;
             // 
-            // Postnr_label
+            // Namn_label
             // 
-            this.Postnr_label.AutoSize = true;
-            this.Postnr_label.Location = new System.Drawing.Point(24, 184);
-            this.Postnr_label.Name = "Postnr_label";
-            this.Postnr_label.Size = new System.Drawing.Size(37, 13);
-            this.Postnr_label.TabIndex = 71;
-            this.Postnr_label.Text = "Postnr";
-            // 
-            // Förnamn_label
-            // 
-            this.Förnamn_label.AutoSize = true;
-            this.Förnamn_label.Location = new System.Drawing.Point(13, 60);
-            this.Förnamn_label.Name = "Förnamn_label";
-            this.Förnamn_label.Size = new System.Drawing.Size(48, 13);
-            this.Förnamn_label.TabIndex = 61;
-            this.Förnamn_label.Text = "Förnamn";
+            this.Namn_label.AutoSize = true;
+            this.Namn_label.Location = new System.Drawing.Point(12, 60);
+            this.Namn_label.Name = "Namn_label";
+            this.Namn_label.Size = new System.Drawing.Size(35, 13);
+            this.Namn_label.TabIndex = 61;
+            this.Namn_label.Text = "Namn";
             // 
             // Adress_textBox
             // 
             this.Adress_textBox.Location = new System.Drawing.Point(63, 155);
             this.Adress_textBox.Name = "Adress_textBox";
-            this.Adress_textBox.Size = new System.Drawing.Size(160, 20);
+            this.Adress_textBox.Size = new System.Drawing.Size(195, 20);
             this.Adress_textBox.TabIndex = 70;
             // 
             // Kön_comboBox
@@ -336,32 +295,24 @@
             this.Kön_label.TabIndex = 79;
             this.Kön_label.Text = "Kön";
             // 
-            // Förnamn_textBox
+            // Namn_textBox
             // 
-            this.Förnamn_textBox.Location = new System.Drawing.Point(63, 56);
-            this.Förnamn_textBox.Name = "Förnamn_textBox";
-            this.Förnamn_textBox.Size = new System.Drawing.Size(147, 20);
-            this.Förnamn_textBox.TabIndex = 64;
-            // 
-            // Efternamn_textBox
-            // 
-            this.Efternamn_textBox.Location = new System.Drawing.Point(63, 80);
-            this.Efternamn_textBox.Name = "Efternamn_textBox";
-            this.Efternamn_textBox.Size = new System.Drawing.Size(147, 20);
-            this.Efternamn_textBox.TabIndex = 62;
+            this.Namn_textBox.Location = new System.Drawing.Point(63, 56);
+            this.Namn_textBox.Name = "Namn_textBox";
+            this.Namn_textBox.Size = new System.Drawing.Size(195, 20);
+            this.Namn_textBox.TabIndex = 64;
             // 
             // Efternamn_label
             // 
             this.Efternamn_label.AutoSize = true;
             this.Efternamn_label.Location = new System.Drawing.Point(8, 83);
             this.Efternamn_label.Name = "Efternamn_label";
-            this.Efternamn_label.Size = new System.Drawing.Size(55, 13);
+            this.Efternamn_label.Size = new System.Drawing.Size(0, 13);
             this.Efternamn_label.TabIndex = 63;
-            this.Efternamn_label.Text = "Efternamn";
             // 
             // RaderaMarkerad_button
             // 
-            this.RaderaMarkerad_button.Location = new System.Drawing.Point(541, 358);
+            this.RaderaMarkerad_button.Location = new System.Drawing.Point(644, 5);
             this.RaderaMarkerad_button.Name = "RaderaMarkerad_button";
             this.RaderaMarkerad_button.Size = new System.Drawing.Size(97, 23);
             this.RaderaMarkerad_button.TabIndex = 91;
@@ -378,7 +329,7 @@
             // 
             // Avbryt_button
             // 
-            this.Avbryt_button.Location = new System.Drawing.Point(925, 358);
+            this.Avbryt_button.Location = new System.Drawing.Point(666, 358);
             this.Avbryt_button.Name = "Avbryt_button";
             this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
             this.Avbryt_button.TabIndex = 89;
@@ -390,7 +341,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 419);
+            this.ClientSize = new System.Drawing.Size(1017, 385);
             this.Controls.Add(this.VisaAllaSpelare_button);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.Golfid_textBox1);
@@ -425,23 +376,18 @@
         private System.Windows.Forms.Label BetaltÅr_label;
         private System.Windows.Forms.Label Handicap_label;
         private System.Windows.Forms.TextBox Epost_textBox;
-        private System.Windows.Forms.TextBox Postort_textBox;
         private System.Windows.Forms.Label Epost_label;
         private System.Windows.Forms.ComboBox MedlemsStatus_comboBox;
         private System.Windows.Forms.TextBox Telefonnr_textBox;
-        private System.Windows.Forms.Label Stad_label;
         private System.Windows.Forms.Label Telefonnr_label;
         private System.Windows.Forms.Label Status_label;
-        private System.Windows.Forms.TextBox Postnr_textBox;
         private System.Windows.Forms.TextBox Handicap_textBox;
-        private System.Windows.Forms.Label Postnr_label;
-        private System.Windows.Forms.Label Förnamn_label;
+        private System.Windows.Forms.Label Namn_label;
         private System.Windows.Forms.TextBox Adress_textBox;
         private System.Windows.Forms.ComboBox Kön_comboBox;
         private System.Windows.Forms.Label Adress_label;
         private System.Windows.Forms.Label Kön_label;
-        private System.Windows.Forms.TextBox Förnamn_textBox;
-        private System.Windows.Forms.TextBox Efternamn_textBox;
+        private System.Windows.Forms.TextBox Namn_textBox;
         private System.Windows.Forms.Label Efternamn_label;
         private System.Windows.Forms.Button RaderaMarkerad_button;
         private System.Windows.Forms.DataGridView dataGridView1;
