@@ -105,6 +105,7 @@
             this.ÄndraMarkerad_button.TabIndex = 93;
             this.ÄndraMarkerad_button.Text = "Ändra markerad";
             this.ÄndraMarkerad_button.UseVisualStyleBackColor = true;
+            this.ÄndraMarkerad_button.Click += new System.EventHandler(this.ÄndraMarkerad_button_Click);
             // 
             // Ändra_groupBox
             // 
@@ -144,6 +145,7 @@
             this.Spara_button.TabIndex = 84;
             this.Spara_button.Text = "Spara";
             this.Spara_button.UseVisualStyleBackColor = true;
+            this.Spara_button.Click += new System.EventHandler(this.Spara_button_Click);
             // 
             // Golfid_label
             // 
@@ -319,6 +321,7 @@
             this.RaderaMarkerad_button.TabIndex = 91;
             this.RaderaMarkerad_button.Text = "Radera markerad";
             this.RaderaMarkerad_button.UseVisualStyleBackColor = true;
+            this.RaderaMarkerad_button.Click += new System.EventHandler(this.RaderaMarkerad_button_Click);
             // 
             // dataGridView1
             // 
