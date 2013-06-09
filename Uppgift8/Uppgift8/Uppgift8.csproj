@@ -44,14 +44,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnmälDeltagare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnmälDeltagare.Designer.cs">
+      <DependentUpon>AnmälDeltagare.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LäggTillNySpelare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LäggTillNySpelare.Designer.cs">
+      <DependentUpon>LäggTillNySpelare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medlemsregister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medlemsregister.Designer.cs">
+      <DependentUpon>Medlemsregister.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistreraResultat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistreraResultat.Designer.cs">
+      <DependentUpon>RegistreraResultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistreraTävling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistreraTävling.Designer.cs">
+      <DependentUpon>RegistreraTävling.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnmälDeltagare.resx">
+      <DependentUpon>AnmälDeltagare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LäggTillNySpelare.resx">
+      <DependentUpon>LäggTillNySpelare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medlemsregister.resx">
+      <DependentUpon>Medlemsregister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,6 +103,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistreraResultat.resx">
+      <DependentUpon>RegistreraResultat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistreraTävling.resx">
+      <DependentUpon>RegistreraTävling.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
