@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Uppgift8
 {
-    public partial class Form1 : Form
+    public partial class Huvudfönster : Form
     {
-        public Form1()
+        public Huvudfönster()
         {
             InitializeComponent();
         }
@@ -49,6 +49,11 @@ namespace Uppgift8
         {
             Medlemsregister Medlemsregister = new Medlemsregister();
             Medlemsregister.ShowDialog();
+        }
+
+        private void Huvudfönster_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
