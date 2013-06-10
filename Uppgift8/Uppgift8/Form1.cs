@@ -31,12 +31,6 @@ namespace Uppgift8
         {
         }
 
-        private void registeraTävlingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RegistreraTävling RegistreraTävling = new RegistreraTävling();
-            RegistreraTävling.ShowDialog();
-        }
-
         private void anmälDeltagareToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AnmälDeltagare AnmälDeltagare = new AnmälDeltagare();
@@ -64,6 +58,18 @@ namespace Uppgift8
         private void Huvudfönster_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void läggTillNyTävlingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LäggTillNyTävling LäggTillNyTävling = new LäggTillNyTävling();
+            LäggTillNyTävling.ShowDialog();
+        }
+
+        private void tävlingsregisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Resultatlistor Resultatlistor = new Resultatlistor();
+            Resultatlistor.ShowDialog();
         }
     }
 }

@@ -159,9 +159,9 @@
             this.Adress_label.AutoSize = true;
             this.Adress_label.Location = new System.Drawing.Point(12, 112);
             this.Adress_label.Name = "Adress_label";
-            this.Adress_label.Size = new System.Drawing.Size(45, 13);
+            this.Adress_label.Size = new System.Drawing.Size(39, 13);
             this.Adress_label.TabIndex = 66;
-            this.Adress_label.Text = "Address";
+            this.Adress_label.Text = "Adress";
             // 
             // Epost_textBox
             // 

@@ -40,9 +40,9 @@
             // 
             // Tävlingid_textBox
             // 
-            this.Tävlingid_textBox.Location = new System.Drawing.Point(10, 25);
+            this.Tävlingid_textBox.Location = new System.Drawing.Point(15, 25);
             this.Tävlingid_textBox.Name = "Tävlingid_textBox";
-            this.Tävlingid_textBox.Size = new System.Drawing.Size(101, 20);
+            this.Tävlingid_textBox.Size = new System.Drawing.Size(85, 20);
             this.Tävlingid_textBox.TabIndex = 118;
             // 
             // Tävlingid_label
@@ -56,18 +56,19 @@
             // 
             // OK_button
             // 
-            this.OK_button.Location = new System.Drawing.Point(10, 227);
+            this.OK_button.Location = new System.Drawing.Point(12, 212);
             this.OK_button.Name = "OK_button";
             this.OK_button.Size = new System.Drawing.Size(75, 23);
             this.OK_button.TabIndex = 116;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
+            this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
             // 
             // Golfid_textBox
             // 
-            this.Golfid_textBox.Location = new System.Drawing.Point(10, 74);
+            this.Golfid_textBox.Location = new System.Drawing.Point(15, 74);
             this.Golfid_textBox.Name = "Golfid_textBox";
-            this.Golfid_textBox.Size = new System.Drawing.Size(101, 20);
+            this.Golfid_textBox.Size = new System.Drawing.Size(85, 20);
             this.Golfid_textBox.TabIndex = 114;
             // 
             // Golfid_label
@@ -81,9 +82,9 @@
             // 
             // Resultat_textBox
             // 
-            this.Resultat_textBox.Location = new System.Drawing.Point(10, 149);
+            this.Resultat_textBox.Location = new System.Drawing.Point(15, 149);
             this.Resultat_textBox.Name = "Resultat_textBox";
-            this.Resultat_textBox.Size = new System.Drawing.Size(101, 20);
+            this.Resultat_textBox.Size = new System.Drawing.Size(48, 20);
             this.Resultat_textBox.TabIndex = 120;
             // 
             // Resultat_label
@@ -97,7 +98,7 @@
             // 
             // Avbryt_button
             // 
-            this.Avbryt_button.Location = new System.Drawing.Point(197, 227);
+            this.Avbryt_button.Location = new System.Drawing.Point(228, 212);
             this.Avbryt_button.Name = "Avbryt_button";
             this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
             this.Avbryt_button.TabIndex = 121;
@@ -109,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(315, 248);
             this.Controls.Add(this.Avbryt_button);
             this.Controls.Add(this.Resultat_textBox);
             this.Controls.Add(this.Resultat_label);

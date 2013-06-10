@@ -65,6 +65,12 @@
     <Compile Include="LäggTillNySpelare.Designer.cs">
       <DependentUpon>LäggTillNySpelare.cs</DependentUpon>
     </Compile>
+    <Compile Include="LäggTillNyTävling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LäggTillNyTävling.Designer.cs">
+      <DependentUpon>LäggTillNyTävling.cs</DependentUpon>
+    </Compile>
     <Compile Include="Medlemsregister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,11 @@
     <Compile Include="RegistreraResultat.Designer.cs">
       <DependentUpon>RegistreraResultat.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistreraTävling.cs">
+    <Compile Include="Resultatlistor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistreraTävling.Designer.cs">
-      <DependentUpon>RegistreraTävling.cs</DependentUpon>
+    <Compile Include="Resultatlistor.Designer.cs">
+      <DependentUpon>Resultatlistor.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AnmälDeltagare.resx">
       <DependentUpon>AnmälDeltagare.cs</DependentUpon>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LäggTillNySpelare.resx">
       <DependentUpon>LäggTillNySpelare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LäggTillNyTävling.resx">
+      <DependentUpon>LäggTillNyTävling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Medlemsregister.resx">
       <DependentUpon>Medlemsregister.cs</DependentUpon>
@@ -109,8 +118,8 @@
     <EmbeddedResource Include="RegistreraResultat.resx">
       <DependentUpon>RegistreraResultat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistreraTävling.resx">
-      <DependentUpon>RegistreraTävling.cs</DependentUpon>
+    <EmbeddedResource Include="Resultatlistor.resx">
+      <DependentUpon>Resultatlistor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -223,6 +223,8 @@ namespace Uppgift8
             NpgsqlCommand command_uppdatera_m = new NpgsqlCommand(uppdatera_m, Huvudfönster.conn);
             command_uppdatera_m.ExecuteNonQuery();
 
+            Ändra_groupBox.Visible = false;
+
             MessageBox.Show("Uppgifter för spelare ändrade!");
         }
     }

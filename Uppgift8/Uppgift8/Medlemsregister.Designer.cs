@@ -42,7 +42,6 @@
             this.Handicap_label = new System.Windows.Forms.Label();
             this.Epost_textBox = new System.Windows.Forms.TextBox();
             this.Epost_label = new System.Windows.Forms.Label();
-            this.MedlemsStatus_comboBox = new System.Windows.Forms.ComboBox();
             this.Telefonnr_textBox = new System.Windows.Forms.TextBox();
             this.Telefonnr_label = new System.Windows.Forms.Label();
             this.Status_label = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@
             this.RaderaMarkerad_button = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Avbryt_button = new System.Windows.Forms.Button();
+            this.MedlemsStatus_comboBox = new System.Windows.Forms.ComboBox();
             this.Ändra_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -205,21 +205,6 @@
             this.Epost_label.TabIndex = 67;
             this.Epost_label.Text = "E-post";
             // 
-            // MedlemsStatus_comboBox
-            // 
-            this.MedlemsStatus_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.MedlemsStatus_comboBox.FormattingEnabled = true;
-            this.MedlemsStatus_comboBox.Items.AddRange(new object[] {
-            "Aktiv",
-            "Vilande",
-            "Greenfee",
-            "Junior",
-            "Ickemedlem"});
-            this.MedlemsStatus_comboBox.Location = new System.Drawing.Point(63, 128);
-            this.MedlemsStatus_comboBox.Name = "MedlemsStatus_comboBox";
-            this.MedlemsStatus_comboBox.Size = new System.Drawing.Size(147, 21);
-            this.MedlemsStatus_comboBox.TabIndex = 75;
-            // 
             // Telefonnr_textBox
             // 
             this.Telefonnr_textBox.Location = new System.Drawing.Point(63, 231);
@@ -341,6 +326,21 @@
             this.Avbryt_button.UseVisualStyleBackColor = true;
             this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
             // 
+            // MedlemsStatus_comboBox
+            // 
+            this.MedlemsStatus_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MedlemsStatus_comboBox.FormattingEnabled = true;
+            this.MedlemsStatus_comboBox.Items.AddRange(new object[] {
+            "Aktiv",
+            "Vilande",
+            "Greenfee",
+            "Junior",
+            "Ickemedlem"});
+            this.MedlemsStatus_comboBox.Location = new System.Drawing.Point(63, 128);
+            this.MedlemsStatus_comboBox.Name = "MedlemsStatus_comboBox";
+            this.MedlemsStatus_comboBox.Size = new System.Drawing.Size(147, 21);
+            this.MedlemsStatus_comboBox.TabIndex = 75;
+            // 
             // Medlemsregister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,7 +381,6 @@
         private System.Windows.Forms.Label Handicap_label;
         private System.Windows.Forms.TextBox Epost_textBox;
         private System.Windows.Forms.Label Epost_label;
-        private System.Windows.Forms.ComboBox MedlemsStatus_comboBox;
         private System.Windows.Forms.TextBox Telefonnr_textBox;
         private System.Windows.Forms.Label Telefonnr_label;
         private System.Windows.Forms.Label Status_label;
@@ -396,5 +395,6 @@
         private System.Windows.Forms.Button RaderaMarkerad_button;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Avbryt_button;
+        private System.Windows.Forms.ComboBox MedlemsStatus_comboBox;
     }
 }
