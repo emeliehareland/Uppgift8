@@ -40,15 +40,15 @@
             // 
             // Tävlingid_textBox
             // 
-            this.Tävlingid_textBox.Location = new System.Drawing.Point(15, 25);
+            this.Tävlingid_textBox.Location = new System.Drawing.Point(8, 25);
             this.Tävlingid_textBox.Name = "Tävlingid_textBox";
             this.Tävlingid_textBox.Size = new System.Drawing.Size(85, 20);
-            this.Tävlingid_textBox.TabIndex = 118;
+            this.Tävlingid_textBox.TabIndex = 1;
             // 
             // Tävlingid_label
             // 
             this.Tävlingid_label.AutoSize = true;
-            this.Tävlingid_label.Location = new System.Drawing.Point(12, 9);
+            this.Tävlingid_label.Location = new System.Drawing.Point(5, 9);
             this.Tävlingid_label.Name = "Tävlingid_label";
             this.Tävlingid_label.Size = new System.Drawing.Size(56, 13);
             this.Tävlingid_label.TabIndex = 117;
@@ -56,25 +56,25 @@
             // 
             // OK_button
             // 
-            this.OK_button.Location = new System.Drawing.Point(12, 212);
+            this.OK_button.Location = new System.Drawing.Point(8, 197);
             this.OK_button.Name = "OK_button";
             this.OK_button.Size = new System.Drawing.Size(75, 23);
-            this.OK_button.TabIndex = 116;
+            this.OK_button.TabIndex = 4;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
             this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
             // 
             // Golfid_textBox
             // 
-            this.Golfid_textBox.Location = new System.Drawing.Point(15, 74);
+            this.Golfid_textBox.Location = new System.Drawing.Point(8, 74);
             this.Golfid_textBox.Name = "Golfid_textBox";
             this.Golfid_textBox.Size = new System.Drawing.Size(85, 20);
-            this.Golfid_textBox.TabIndex = 114;
+            this.Golfid_textBox.TabIndex = 2;
             // 
             // Golfid_label
             // 
             this.Golfid_label.AutoSize = true;
-            this.Golfid_label.Location = new System.Drawing.Point(12, 58);
+            this.Golfid_label.Location = new System.Drawing.Point(5, 58);
             this.Golfid_label.Name = "Golfid_label";
             this.Golfid_label.Size = new System.Drawing.Size(40, 13);
             this.Golfid_label.TabIndex = 113;
@@ -82,15 +82,15 @@
             // 
             // Resultat_textBox
             // 
-            this.Resultat_textBox.Location = new System.Drawing.Point(15, 149);
+            this.Resultat_textBox.Location = new System.Drawing.Point(8, 149);
             this.Resultat_textBox.Name = "Resultat_textBox";
             this.Resultat_textBox.Size = new System.Drawing.Size(48, 20);
-            this.Resultat_textBox.TabIndex = 120;
+            this.Resultat_textBox.TabIndex = 3;
             // 
             // Resultat_label
             // 
             this.Resultat_label.AutoSize = true;
-            this.Resultat_label.Location = new System.Drawing.Point(12, 133);
+            this.Resultat_label.Location = new System.Drawing.Point(5, 133);
             this.Resultat_label.Name = "Resultat_label";
             this.Resultat_label.Size = new System.Drawing.Size(46, 13);
             this.Resultat_label.TabIndex = 119;
@@ -98,10 +98,10 @@
             // 
             // Avbryt_button
             // 
-            this.Avbryt_button.Location = new System.Drawing.Point(228, 212);
+            this.Avbryt_button.Location = new System.Drawing.Point(210, 197);
             this.Avbryt_button.Name = "Avbryt_button";
             this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
-            this.Avbryt_button.TabIndex = 121;
+            this.Avbryt_button.TabIndex = 5;
             this.Avbryt_button.Text = "Avbryt";
             this.Avbryt_button.UseVisualStyleBackColor = true;
             this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 248);
+            this.ClientSize = new System.Drawing.Size(296, 226);
             this.Controls.Add(this.Avbryt_button);
             this.Controls.Add(this.Resultat_textBox);
             this.Controls.Add(this.Resultat_label);

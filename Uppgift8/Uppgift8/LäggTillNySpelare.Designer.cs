@@ -55,7 +55,7 @@
             this.BetaltÅr_textBox.Location = new System.Drawing.Point(197, 328);
             this.BetaltÅr_textBox.Name = "BetaltÅr_textBox";
             this.BetaltÅr_textBox.Size = new System.Drawing.Size(42, 20);
-            this.BetaltÅr_textBox.TabIndex = 81;
+            this.BetaltÅr_textBox.TabIndex = 9;
             // 
             // BetaltÅr_label
             // 
@@ -88,7 +88,7 @@
             this.Medlemsstatus_comboBox.Location = new System.Drawing.Point(12, 328);
             this.Medlemsstatus_comboBox.Name = "Medlemsstatus_comboBox";
             this.Medlemsstatus_comboBox.Size = new System.Drawing.Size(147, 21);
-            this.Medlemsstatus_comboBox.TabIndex = 72;
+            this.Medlemsstatus_comboBox.TabIndex = 8;
             // 
             // Kön_label
             // 
@@ -109,24 +109,24 @@
             this.Kön_comboBox.Location = new System.Drawing.Point(12, 217);
             this.Kön_comboBox.Name = "Kön_comboBox";
             this.Kön_comboBox.Size = new System.Drawing.Size(75, 21);
-            this.Kön_comboBox.TabIndex = 77;
+            this.Kön_comboBox.TabIndex = 6;
             // 
             // OK_button
             // 
-            this.OK_button.Location = new System.Drawing.Point(284, 325);
+            this.OK_button.Location = new System.Drawing.Point(12, 368);
             this.OK_button.Name = "OK_button";
             this.OK_button.Size = new System.Drawing.Size(75, 23);
-            this.OK_button.TabIndex = 76;
+            this.OK_button.TabIndex = 10;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
             this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
             // 
             // Avbryt_button
             // 
-            this.Avbryt_button.Location = new System.Drawing.Point(375, 325);
+            this.Avbryt_button.Location = new System.Drawing.Point(387, 368);
             this.Avbryt_button.Name = "Avbryt_button";
             this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
-            this.Avbryt_button.TabIndex = 75;
+            this.Avbryt_button.TabIndex = 11;
             this.Avbryt_button.Text = "Avbryt";
             this.Avbryt_button.UseVisualStyleBackColor = true;
             this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
@@ -136,7 +136,7 @@
             this.Handicap_textBox.Location = new System.Drawing.Point(12, 276);
             this.Handicap_textBox.Name = "Handicap_textBox";
             this.Handicap_textBox.Size = new System.Drawing.Size(57, 20);
-            this.Handicap_textBox.TabIndex = 74;
+            this.Handicap_textBox.TabIndex = 7;
             // 
             // Handicap_label
             // 
@@ -152,7 +152,7 @@
             this.Adress_textBox.Location = new System.Drawing.Point(12, 128);
             this.Adress_textBox.Name = "Adress_textBox";
             this.Adress_textBox.Size = new System.Drawing.Size(261, 20);
-            this.Adress_textBox.TabIndex = 67;
+            this.Adress_textBox.TabIndex = 3;
             // 
             // Adress_label
             // 
@@ -168,7 +168,7 @@
             this.Epost_textBox.Location = new System.Drawing.Point(111, 176);
             this.Epost_textBox.Name = "Epost_textBox";
             this.Epost_textBox.Size = new System.Drawing.Size(261, 20);
-            this.Epost_textBox.TabIndex = 65;
+            this.Epost_textBox.TabIndex = 5;
             // 
             // Epost_label
             // 
@@ -184,7 +184,7 @@
             this.Telefonnummer_textBox.Location = new System.Drawing.Point(12, 176);
             this.Telefonnummer_textBox.Name = "Telefonnummer_textBox";
             this.Telefonnummer_textBox.Size = new System.Drawing.Size(93, 20);
-            this.Telefonnummer_textBox.TabIndex = 63;
+            this.Telefonnummer_textBox.TabIndex = 4;
             // 
             // Telefonnummer_label
             // 
@@ -200,14 +200,14 @@
             this.Namn_textBox.Location = new System.Drawing.Point(12, 78);
             this.Namn_textBox.Name = "Namn_textBox";
             this.Namn_textBox.Size = new System.Drawing.Size(278, 20);
-            this.Namn_textBox.TabIndex = 61;
+            this.Namn_textBox.TabIndex = 2;
             // 
             // Golfid_textBox
             // 
             this.Golfid_textBox.Location = new System.Drawing.Point(12, 30);
             this.Golfid_textBox.Name = "Golfid_textBox";
             this.Golfid_textBox.Size = new System.Drawing.Size(101, 20);
-            this.Golfid_textBox.TabIndex = 57;
+            this.Golfid_textBox.TabIndex = 1;
             // 
             // Golfid_label
             // 
@@ -231,7 +231,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 377);
+            this.ClientSize = new System.Drawing.Size(474, 403);
             this.Controls.Add(this.Namn_label);
             this.Controls.Add(this.BetaltÅr_textBox);
             this.Controls.Add(this.BetaltÅr_label);

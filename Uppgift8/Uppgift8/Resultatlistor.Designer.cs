@@ -54,14 +54,14 @@
             this.Tävlingid_textBox.Location = new System.Drawing.Point(71, 8);
             this.Tävlingid_textBox.Name = "Tävlingid_textBox";
             this.Tävlingid_textBox.Size = new System.Drawing.Size(57, 20);
-            this.Tävlingid_textBox.TabIndex = 111;
+            this.Tävlingid_textBox.TabIndex = 1;
             // 
             // VisaResultat_button
             // 
             this.VisaResultat_button.Location = new System.Drawing.Point(12, 34);
             this.VisaResultat_button.Name = "VisaResultat_button";
             this.VisaResultat_button.Size = new System.Drawing.Size(75, 23);
-            this.VisaResultat_button.TabIndex = 110;
+            this.VisaResultat_button.TabIndex = 5;
             this.VisaResultat_button.Text = "Visa resultat";
             this.VisaResultat_button.UseVisualStyleBackColor = true;
             this.VisaResultat_button.Click += new System.EventHandler(this.VisaResultat_button_Click);
@@ -77,10 +77,10 @@
             // 
             // Avbryt_button
             // 
-            this.Avbryt_button.Location = new System.Drawing.Point(249, 252);
+            this.Avbryt_button.Location = new System.Drawing.Point(253, 281);
             this.Avbryt_button.Name = "Avbryt_button";
             this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
-            this.Avbryt_button.TabIndex = 107;
+            this.Avbryt_button.TabIndex = 6;
             this.Avbryt_button.Text = "Avbryt";
             this.Avbryt_button.UseVisualStyleBackColor = true;
             this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
@@ -88,7 +88,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(140, 9);
+            this.label1.Location = new System.Drawing.Point(151, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 113;
@@ -97,10 +97,10 @@
             // C_radioButton
             // 
             this.C_radioButton.AutoSize = true;
-            this.C_radioButton.Location = new System.Drawing.Point(296, 7);
+            this.C_radioButton.Location = new System.Drawing.Point(287, 7);
             this.C_radioButton.Name = "C_radioButton";
             this.C_radioButton.Size = new System.Drawing.Size(32, 17);
-            this.C_radioButton.TabIndex = 131;
+            this.C_radioButton.TabIndex = 4;
             this.C_radioButton.TabStop = true;
             this.C_radioButton.Text = "C";
             this.C_radioButton.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@
             this.B_radioButton.Location = new System.Drawing.Point(249, 7);
             this.B_radioButton.Name = "B_radioButton";
             this.B_radioButton.Size = new System.Drawing.Size(32, 17);
-            this.B_radioButton.TabIndex = 130;
+            this.B_radioButton.TabIndex = 3;
             this.B_radioButton.TabStop = true;
             this.B_radioButton.Text = "B";
             this.B_radioButton.UseVisualStyleBackColor = true;
@@ -119,10 +119,10 @@
             // A_radioButton
             // 
             this.A_radioButton.AutoSize = true;
-            this.A_radioButton.Location = new System.Drawing.Point(200, 7);
+            this.A_radioButton.Location = new System.Drawing.Point(211, 7);
             this.A_radioButton.Name = "A_radioButton";
             this.A_radioButton.Size = new System.Drawing.Size(32, 17);
-            this.A_radioButton.TabIndex = 129;
+            this.A_radioButton.TabIndex = 2;
             this.A_radioButton.TabStop = true;
             this.A_radioButton.Text = "A";
             this.A_radioButton.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 289);
+            this.ClientSize = new System.Drawing.Size(337, 316);
             this.Controls.Add(this.C_radioButton);
             this.Controls.Add(this.B_radioButton);
             this.Controls.Add(this.A_radioButton);

@@ -45,7 +45,7 @@
             this.Tävlingid_textBox.Location = new System.Drawing.Point(12, 25);
             this.Tävlingid_textBox.Name = "Tävlingid_textBox";
             this.Tävlingid_textBox.Size = new System.Drawing.Size(74, 20);
-            this.Tävlingid_textBox.TabIndex = 112;
+            this.Tävlingid_textBox.TabIndex = 1;
             // 
             // Tävlingid_label
             // 
@@ -61,7 +61,7 @@
             this.OK_button.Location = new System.Drawing.Point(12, 237);
             this.OK_button.Name = "OK_button";
             this.OK_button.Size = new System.Drawing.Size(75, 23);
-            this.OK_button.TabIndex = 110;
+            this.OK_button.TabIndex = 6;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
             this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
@@ -71,7 +71,7 @@
             this.Avbryt_button.Location = new System.Drawing.Point(203, 237);
             this.Avbryt_button.Name = "Avbryt_button";
             this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
-            this.Avbryt_button.TabIndex = 109;
+            this.Avbryt_button.TabIndex = 7;
             this.Avbryt_button.Text = "Avbryt";
             this.Avbryt_button.UseVisualStyleBackColor = true;
             this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
@@ -81,7 +81,7 @@
             this.Golfid_textBox.Location = new System.Drawing.Point(11, 74);
             this.Golfid_textBox.Name = "Golfid_textBox";
             this.Golfid_textBox.Size = new System.Drawing.Size(75, 20);
-            this.Golfid_textBox.TabIndex = 104;
+            this.Golfid_textBox.TabIndex = 2;
             // 
             // Golfid_label
             // 
@@ -107,7 +107,7 @@
             this.C_radioButton.Location = new System.Drawing.Point(12, 177);
             this.C_radioButton.Name = "C_radioButton";
             this.C_radioButton.Size = new System.Drawing.Size(32, 17);
-            this.C_radioButton.TabIndex = 128;
+            this.C_radioButton.TabIndex = 5;
             this.C_radioButton.TabStop = true;
             this.C_radioButton.Text = "C";
             this.C_radioButton.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             this.B_radioButton.Location = new System.Drawing.Point(12, 154);
             this.B_radioButton.Name = "B_radioButton";
             this.B_radioButton.Size = new System.Drawing.Size(32, 17);
-            this.B_radioButton.TabIndex = 127;
+            this.B_radioButton.TabIndex = 4;
             this.B_radioButton.TabStop = true;
             this.B_radioButton.Text = "B";
             this.B_radioButton.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.A_radioButton.Location = new System.Drawing.Point(12, 131);
             this.A_radioButton.Name = "A_radioButton";
             this.A_radioButton.Size = new System.Drawing.Size(32, 17);
-            this.A_radioButton.TabIndex = 126;
+            this.A_radioButton.TabIndex = 3;
             this.A_radioButton.TabStop = true;
             this.A_radioButton.Text = "A";
             this.A_radioButton.UseVisualStyleBackColor = true;

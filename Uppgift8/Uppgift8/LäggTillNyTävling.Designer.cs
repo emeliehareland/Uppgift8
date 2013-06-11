@@ -55,10 +55,10 @@
             // 
             // Avbryt_button
             // 
-            this.Avbryt_button.Location = new System.Drawing.Point(261, 218);
+            this.Avbryt_button.Location = new System.Drawing.Point(265, 273);
             this.Avbryt_button.Name = "Avbryt_button";
             this.Avbryt_button.Size = new System.Drawing.Size(75, 23);
-            this.Avbryt_button.TabIndex = 151;
+            this.Avbryt_button.TabIndex = 11;
             this.Avbryt_button.Text = "Avbryt";
             this.Avbryt_button.UseVisualStyleBackColor = true;
             this.Avbryt_button.Click += new System.EventHandler(this.Avbryt_button_Click);
@@ -85,21 +85,21 @@
             this.CTill_textBox.Location = new System.Drawing.Point(80, 218);
             this.CTill_textBox.Name = "CTill_textBox";
             this.CTill_textBox.Size = new System.Drawing.Size(30, 20);
-            this.CTill_textBox.TabIndex = 134;
+            this.CTill_textBox.TabIndex = 9;
             // 
             // BTill_textBox
             // 
             this.BTill_textBox.Location = new System.Drawing.Point(80, 188);
             this.BTill_textBox.Name = "BTill_textBox";
             this.BTill_textBox.Size = new System.Drawing.Size(30, 20);
-            this.BTill_textBox.TabIndex = 132;
+            this.BTill_textBox.TabIndex = 7;
             // 
             // ATill_textBox
             // 
             this.ATill_textBox.Location = new System.Drawing.Point(80, 158);
             this.ATill_textBox.Name = "ATill_textBox";
             this.ATill_textBox.Size = new System.Drawing.Size(30, 20);
-            this.ATill_textBox.TabIndex = 130;
+            this.ATill_textBox.TabIndex = 5;
             // 
             // label13
             // 
@@ -133,14 +133,14 @@
             this.BFrån_textBox.Location = new System.Drawing.Point(28, 188);
             this.BFrån_textBox.Name = "BFrån_textBox";
             this.BFrån_textBox.Size = new System.Drawing.Size(30, 20);
-            this.BFrån_textBox.TabIndex = 131;
+            this.BFrån_textBox.TabIndex = 6;
             // 
             // CFrån_textBox
             // 
             this.CFrån_textBox.Location = new System.Drawing.Point(28, 218);
             this.CFrån_textBox.Name = "CFrån_textBox";
             this.CFrån_textBox.Size = new System.Drawing.Size(30, 20);
-            this.CFrån_textBox.TabIndex = 133;
+            this.CFrån_textBox.TabIndex = 8;
             // 
             // C_label
             // 
@@ -174,14 +174,14 @@
             this.AFrån_textBox.Location = new System.Drawing.Point(28, 158);
             this.AFrån_textBox.Name = "AFrån_textBox";
             this.AFrån_textBox.Size = new System.Drawing.Size(30, 20);
-            this.AFrån_textBox.TabIndex = 129;
+            this.AFrån_textBox.TabIndex = 4;
             // 
             // OK_button
             // 
-            this.OK_button.Location = new System.Drawing.Point(180, 218);
+            this.OK_button.Location = new System.Drawing.Point(8, 273);
             this.OK_button.Name = "OK_button";
             this.OK_button.Size = new System.Drawing.Size(75, 23);
-            this.OK_button.TabIndex = 138;
+            this.OK_button.TabIndex = 10;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
             this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
@@ -191,7 +191,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(202, 30);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(141, 20);
-            this.dateTimePicker1.TabIndex = 127;
+            this.dateTimePicker1.TabIndex = 2;
             // 
             // label3
             // 
@@ -215,7 +215,7 @@
             this.Tävlingsnamn_textBox.Location = new System.Drawing.Point(12, 30);
             this.Tävlingsnamn_textBox.Name = "Tävlingsnamn_textBox";
             this.Tävlingsnamn_textBox.Size = new System.Drawing.Size(171, 20);
-            this.Tävlingsnamn_textBox.TabIndex = 125;
+            this.Tävlingsnamn_textBox.TabIndex = 1;
             // 
             // Tävlingsnamn_label
             // 
@@ -240,13 +240,13 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(11, 87);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(141, 20);
-            this.dateTimePicker2.TabIndex = 128;
+            this.dateTimePicker2.TabIndex = 3;
             // 
             // LäggTillNyTävling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 249);
+            this.ClientSize = new System.Drawing.Size(352, 308);
             this.Controls.Add(this.Avbryt_button);
             this.Controls.Add(this.A_label);
             this.Controls.Add(this.label15);
