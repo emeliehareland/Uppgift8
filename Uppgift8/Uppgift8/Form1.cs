@@ -31,11 +31,6 @@ namespace Uppgift8
             conn.Open();
         }
 
-        //Felklick. Vill inte tabort med risk för att förstöra något.
-        private void medlemshanteringToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
         //När användaren klickar på "Anmäl deltagare" i menyn öppnas formet AmnälDeltagare.
         private void anmälDeltagareToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -62,12 +57,6 @@ namespace Uppgift8
         {
             Medlemsregister Medlemsregister = new Medlemsregister();
             Medlemsregister.ShowDialog();
-        }
-
-        //Felklick. Vill inte tabort med risk för att förstöra något.
-        private void Huvudfönster_Load(object sender, EventArgs e)
-        {
-
         }
 
         //När användaren klickar på "Lägg till ny tävling" i menyn öppnas formet LäggTillNyTävling.

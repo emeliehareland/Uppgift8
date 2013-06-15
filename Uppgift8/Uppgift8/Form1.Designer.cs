@@ -59,7 +59,6 @@
             this.medlemshanteringToolStripMenuItem.Name = "medlemshanteringToolStripMenuItem";
             this.medlemshanteringToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
             this.medlemshanteringToolStripMenuItem.Text = "Medlemshantering";
-            this.medlemshanteringToolStripMenuItem.Click += new System.EventHandler(this.medlemshanteringToolStripMenuItem_Click);
             // 
             // medlemsregisterToolStripMenuItem
             // 
@@ -123,7 +122,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Huvudfönster";
             this.Text = "Uppgift 8";
-            this.Load += new System.EventHandler(this.Huvudfönster_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

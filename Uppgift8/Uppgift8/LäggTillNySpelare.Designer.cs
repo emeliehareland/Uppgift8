@@ -254,7 +254,6 @@
             this.Controls.Add(this.Golfid_label);
             this.Name = "LäggTillNySpelare";
             this.Text = "LäggTillNySpelare";
-            this.Load += new System.EventHandler(this.LäggTillNySpelare_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

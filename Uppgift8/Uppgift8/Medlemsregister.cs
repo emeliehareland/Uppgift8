@@ -236,6 +236,11 @@ namespace Uppgift8
             //Deklarerar variabeln kon, står för kön.
             var kon = "";
 
+            // --------------------------------------
+            // Prova detta istället för nedanstående? 
+            // kon = Kön_comboBox.Text; 
+            // -------------------------------------
+
             //Om användaren väljer Kvinna i comboboxen får variabeln kon värdet Kvinna.
             if (Kön_comboBox.Text == "Kvinna")
             {
@@ -250,6 +255,11 @@ namespace Uppgift8
 
             //Deklarerar variabeln status.
             var status = "";
+
+            // --------------------------------------
+            // Prova detta istället för nedanstående? 
+            // status = Medlemsstatus_comboBox.Text; 
+            // -------------------------------------
 
             //Om användaren väljer Aktiv i comboboxen får variabeln status värdet Aktiv.
             if (MedlemsStatus_comboBox.Text == "Aktiv")
