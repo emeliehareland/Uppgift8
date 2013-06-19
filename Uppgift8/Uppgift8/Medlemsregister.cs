@@ -265,60 +265,14 @@ namespace Uppgift8
             //Deklarerar variabeln kon, står för kön.
             var kon = "";
 
-            // --------------------------------------
-            // Prova detta istället för nedanstående? 
-            // kon = Kön_comboBox.Text; 
-            // -------------------------------------
+            kon = Kön_comboBox.Text;
 
-            //Om användaren väljer Kvinna i comboboxen får variabeln kon värdet Kvinna.
-            if (Kön_comboBox.Text == "Kvinna")
-            {
-                kon = "Kvinna";
-            }
-
-            //Om användaren väljer Man i comboboxen får variabeln kon värdet Man.
-            else if (Kön_comboBox.Text == "Man")
-            {
-                kon = "Man";
-            }
 
             //Deklarerar variabeln status.
             var status = "";
 
-            // --------------------------------------
-            // Prova detta istället för nedanstående? 
-            // status = Medlemsstatus_comboBox.Text; 
-            // -------------------------------------
+            status = MedlemsStatus_comboBox.Text; 
 
-            //Om användaren väljer Aktiv i comboboxen får variabeln status värdet Aktiv.
-            if (MedlemsStatus_comboBox.Text == "Aktiv")
-            {
-                status = "Aktiv";
-            }
-
-            //Om användaren väljer Vilande i comboboxen får variabeln status värdet Vilande.
-            else if (MedlemsStatus_comboBox.Text == "Vilande")
-            {
-                status = "Vilande";
-            }
-
-            //Om användaren väljer Greenfee i comboboxen får variabeln status värdet Greenfee.
-            else if (MedlemsStatus_comboBox.Text == "Greenfee")
-            {
-                status = "Greenfee";
-            }
-
-            //Om användaren väljer Junior i comboboxen får variabeln status värdet Junior.
-            else if (MedlemsStatus_comboBox.Text == "Junior")
-            {
-                status = "Junior";
-            }
-
-            //Om användaren väljer Ickemedlem i comboboxen får variabeln status värdet Ickemedlem.
-            else if (MedlemsStatus_comboBox.Text == "Ickemedlem")
-            {
-                status = "Ickemedlem";
-            }
 
             //Använder strängen id för att se vilket golfid det är som användaren har markerat och valt att ändra.
             string id = markeratid();

@@ -31,60 +31,14 @@ namespace Uppgift8
             //Deklarerar variabeln kon. Står för kön.
             var kon = "";
 
-            // --------------------------------------
-            // Prova detta istället för nedanstående? 
-            // kon = Kön_comboBox.Text; 
-            // --------------------------------------
-            
-            //Om användaren väljer Kvinna i comboboxen får variabeln kon värdet Kvinna.
-            if (Kön_comboBox.Text == "Kvinna")
-            {
-                kon = "Kvinna";
-            }
-
-            //Om användaren väljer Man i comboboxen får variabeln kon värdet Man.
-            else if (Kön_comboBox.Text == "Man")
-            {
-                kon = "Man";
-            }
+            kon = Kön_comboBox.Text; 
+           
 
             //Deklarerar variabeln status.
             var status = "";
 
-             // --------------------------------------
-             // Prova detta istället för nedanstående? 
-             // status = Medlemsstatus_comboBox.Text; 
-             // --------------------------------------
-
-            //Om användaren väljer Aktiv i comboboxen får variabeln status värdet Aktiv.
-            if (Medlemsstatus_comboBox.Text == "Aktiv")
-            {
-                status = "Aktiv";
-            }
-
-            //Om användaren väljer Vilande i comboboxen får variabeln status värdet Vilande.
-            else if (Medlemsstatus_comboBox.Text == "Vilande")
-            {
-                status = "Vilande";
-            }
-
-            //Om användaren väljer Greenfee i comboboxen får variabeln status värdet Greenfee.
-            else if (Medlemsstatus_comboBox.Text == "Greenfee")
-            {
-                status = "Greenfee";
-            }
-
-            //Om användaren väljer Junior i comboboxen får variabeln status värdet Junior.
-            else if (Medlemsstatus_comboBox.Text == "Junior")
-            {
-                status = "Junior";
-            }
-
-            //Om användaren väljer Ickemedlem i comboboxen får variabeln status värdet Ickemedlem.
-            else if (Medlemsstatus_comboBox.Text == "Ickemedlem")
-            {
-                status = "Ickemedlem";
-            }
+            status = Medlemsstatus_comboBox.Text; 
+            
 
             //Skapar strängen nyspelare1.
             //Strängen innehåller information om ny spelare. Lägger in golfid, namn, adress, telefonnummer, epost, handicap och kön i databasen, i tabellen person.
