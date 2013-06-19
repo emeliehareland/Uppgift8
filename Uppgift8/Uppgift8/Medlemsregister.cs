@@ -165,20 +165,28 @@ namespace Uppgift8
             string id = markeratid();
 
             //Skapar strängen tabort1.
-            //Strängen innehåller information om vilken spelare som ska raderas. Raderar golfid från databasen, tabellen person.
-            String tabort1 = "delete from person where golfid = '" + id + "';";
+            //Strängen innehåller information om vilken spelare som ska raderas. Raderar golfid från databasen, tabellen medlem.
+            String tabort1 = "delete from deltari where golfid = '" + id + "';";
             //Skapar ett nytt Npgsql kommando, command11.
             NpgsqlCommand command11 = new NpgsqlCommand(tabort1, Huvudfönster.conn);
-            //Utför kommando, command11.
+            //Utför kommando, command12.
             command11.ExecuteNonQuery();
 
-            //Skapar strängen tabort2.
-            //Strängen innehåller information om vilken spelare som ska raderas. Raderar golfid från databasen, tabellen medlem.
-            String tabort2 = "delete from medlem where golfid = '" + id + "';";
+            //Skapar strängen tabort1.
+            //Strängen innehåller information om vilken spelare som ska raderas. Raderar golfid från databasen, tabellen person.
+            String tabort2 = "delete from person where golfid = '" + id + "';";
             //Skapar ett nytt Npgsql kommando, command12.
             NpgsqlCommand command12 = new NpgsqlCommand(tabort2, Huvudfönster.conn);
             //Utför kommando, command12.
             command12.ExecuteNonQuery();
+
+            //Skapar strängen tabort2.
+            //Strängen innehåller information om vilken spelare som ska raderas. Raderar golfid från databasen, tabellen medlem.
+            String tabort3 = "delete from medlem where golfid = '" + id + "';";
+            //Skapar ett nytt Npgsql kommando, command122.
+            NpgsqlCommand command122 = new NpgsqlCommand(tabort3, Huvudfönster.conn);
+            //Utför kommando, command122.
+            command122.ExecuteNonQuery();
 
             //När allt ovan är utfört visas en meddelanderuta.
             MessageBox.Show("Vald spelare är nu borttagen ur databasen!");
@@ -207,6 +215,7 @@ namespace Uppgift8
                 Telefonnr_textBox.Text = dr5["telefonnummer"].ToString();
                 Epost_textBox.Text = dr5["epost"].ToString();
                 Handicap_textBox.Text = dr5["handicap"].ToString();
+                Kön_comboBox.Text = dr5["kon"].ToString();
                 MedlemsStatus_comboBox.Text = dr5["medlemsstatus"].ToString();
                 BetaltÅr_textBox.Text = dr5["betalt"].ToString();
 
@@ -222,6 +231,26 @@ namespace Uppgift8
                     Kön_comboBox.Text = "Kvinna";
                 }
 
+                if (dr5["medlemsstatus"].ToString() == "Aktiv")
+                {
+                    MedlemsStatus_comboBox.Text = "Aktiv";
+                }
+                else if (dr5["medlemsstatus"].ToString() == "Vilande")
+                {
+                    MedlemsStatus_comboBox.Text = "Vilande";
+                }
+                else if (dr5["medlemsstatus"].ToString() == "Greenfee")
+                {
+                    MedlemsStatus_comboBox.Text = "Greenfee";
+                }
+                else if (dr5["medlemsstatus"].ToString() == "Junior")
+                {
+                    MedlemsStatus_comboBox.Text = "Junior";
+                }
+                else if (dr5["medlemsstatus"].ToString() == "Ickemedlem")
+                {
+                    MedlemsStatus_comboBox.Text = "Ickemedlem";
+                }
             }
             //Stänger DataReader.
             dr5.Close();
@@ -302,6 +331,12 @@ namespace Uppgift8
             //Utför kommando, command14.
             command14.ExecuteNonQuery();
 
+            //Gör så att Ändra_groupBox blir osynlig när användaren valt ändrat den vald spelare.
+            Ändra_groupBox.Visible = false;
+
+            //När allt ovan är utfört visas en meddelanderuta.
+            MessageBox.Show("Uppgifter för spelare ändrade!");
+
             //Skapar strängen uppdatera2.
             //Strängen innehåller uppdaterad information om spelare. Lägger in golfid, medlemsstatus och betalt i databasen, i tabellen medlem.
             string uppdatera2 = "update medlem set medlemsstatus = '" + status + "', betalt = '" + BetaltÅr_textBox.Text + "' where golfid = '" + Golfid_textBox2.Text + "';";
@@ -315,6 +350,9 @@ namespace Uppgift8
 
             //När allt ovan är utfört visas en meddelanderuta.
             MessageBox.Show("Uppgifter för spelare ändrade!");
+
+
+            //Programmet buggar ur om man endast ändrar innehållet i comboboxarna, ändrar man ex. handicap samtidigt fungerar det...?
         }
     }
 }
